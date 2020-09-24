@@ -28,7 +28,7 @@ parser.add_argument("--pretrained_loc", type=str,
                     default="pretrained/imdb_model.pt",
                     help="Location of the pretrained parameters")
 parser.add_argument("--mode", type=str, choices=["train", "test"], 
-                    default="test", 
+                    default="train", 
                     help="Mode in which we are using the neural net")
 parser.add_argument("--dropout", type=float, default=0.5,
                     help="Dropout probability")
