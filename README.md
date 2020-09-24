@@ -1,6 +1,8 @@
 # IMDB Sentiment Analysis in PyTorch
 
 ## Dataset
+IMDB dataset consists of 50,000 movie reviews split into train and test set by using (50-50)[%] split. Dataset is balanced and it contains 2500 positive and 25000 negative reviews.
+The goal of the project was to develop Sentiment Analyzer which could determine if some review is positive or negative.
 IMDB dataset was used with train/test split already built in the IMDB class constructor. Train set is then split into train/validation split using (80-20)[%] ratio.
 #### Preprocessing
 Vocab for the datasets was created using pretrained [GloVe embeddings](https://nlp.stanford.edu/projects/glove/) with embedding_dim=300. In the vocab creation process only words with minimum frequency of 10 occurences were defined, other are marked as unknown. Maximum size of the vocab was fixed to 25000 during the creation process.
