@@ -81,6 +81,9 @@ def train_loop(net, train_loader, valid_loader, test_loader):
     
     Arguments:
         net (nn.Module): neural net to train
+        train_loader (DataLoader): load object for train data
+        valid_loader (DataLoader): load object for validation data
+        test_loader (DataLoader): load object for test data
     '''
     # Create an optimizer for the network
     optimizer = optim.Adam(net.parameters(), lr=net_config.lr)
