@@ -8,9 +8,11 @@ from train_eval import train_loop, evaluate
 from utils import get_dataloaders
 
 if __name__ == "__main__":
+    # Load the datasets and used vocabulary
     init(config)
 
     if net_config.mode == "train":
+        # Create fresh new instance of the RNN
         net = SentimentAnalyzer(config['vocab'], net_config.hidden_dim,
                                 net_config.layers, net_config.dropout, 
                                 net_config.bidirectional).to(device)
@@ -21,6 +23,8 @@ if __name__ == "__main__":
         # Train the network
         train_loop(net, train_loader, valid_loader, test_loader)
     else:
+        # Create fresh new instance of the RNN which
+        # holds loaded pretrained weights
         net = SentimentAnalyzer(config['vocab'], net_config.hidden_dim,
                                 net_config.layers, net_config.dropout, 
                                 net_config.bidirectional).to(device)

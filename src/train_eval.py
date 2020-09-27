@@ -92,12 +92,11 @@ def train_loop(net, train_loader, valid_loader, test_loader):
         print(f'Epoch: {epoch+1:02}')
         # Train the net for a single epoch
         train_loss, train_acc = train(net, train_loader, 
-                                            optimizer, LOSS_FUNC)
+                                      optimizer, LOSS_FUNC)
 
         # Evaluate the net performance on the validation dataset
         with torch.no_grad(): 
-            valid_loss, valid_acc = evaluate(net, valid_loader, 
-                                                        LOSS_FUNC)
+            valid_loss, valid_acc = evaluate(net, valid_loader,  LOSS_FUNC)
 
         print(f'\tTrain Loss: {train_loss:.3f} | Train Acc: {train_acc*100:.2f}%')
         print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc: {valid_acc*100:.2f}%')
