@@ -78,7 +78,7 @@ def train_loop(net, train_loader, valid_loader, test_loader):
     ''' Trains the model for specified number of epochs.
         Training process of the model can be tracked 
         by tracking train&validation acc/loss.
-    
+        
     Arguments:
         net (nn.Module): neural net to train
         train_loader (DataLoader): load object for train data
