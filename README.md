@@ -13,7 +13,7 @@ The network uses an [Embedding](https://pytorch.org/docs/stable/generated/torch.
 ## Results (using Google Colab)
 | Train Acc.      | Validation Acc. | Test Acc. | Test loss. |
 | :-------------: | :-------------: | :-------: | :--------: |
-|      89.79      | 88.81       | 88.06       | 0.307
+|      89.79      | 88.81       | 88.22       | 0.307
 
 
 ## Setup & instructions
