@@ -24,6 +24,5 @@ The network uses an [Embedding](https://pytorch.org/docs/stable/generated/torch.
 
     a) Start the main script: ``` python src/main.py ``` which will automatically instantiate the model and start training it after dataset is loaded. After training the model performance will be evaluated on the test set.
     
-    b) If you don't want to train the model, you can use model which was pretrained by me using Google Colab. To achieve this just execute: ``` python src/main.py --mode test ```. This will load [pretrained weights](src/pretrained/) and evaluate the model performance on the test set. The model was trained on a GPU so a GPU with CUDA is necessary in order to load pretrained weights. 
-
-**Note:**  You don't need GPU with CUDA to be able to train the model. The pipeline of this project adjusts to your configuration. Check out variable **device** in the [globals.py](src/globals.py) file for more info.
+    b) If you don't want to train the model, you can use model which was pretrained by me using Google Colab. To achieve this just execute: ``` python src/main.py --mode test ```. This will load [pretrained weights](src/pretrained/) and evaluate the model performance on the test set. 
+    
