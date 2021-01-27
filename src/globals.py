@@ -11,11 +11,11 @@ MAX_VOCAB_SIZE = 25000
 # We include only words which occur in the corpus with
 # some minimal frequency
 MIN_FREQ = 10
-#We trim/pad each sentence to this number of words
+# We trim/pad each sentence to this number of words
 MAX_SEQ_LEN = 500
 
 # DATASET HYPERPARAMETERS
-# Split ratio between train and validation sed
+# Split ratio between train and validation set
 SPLIT_RATIO = 0.8
 # Random seed used for random train/validation split
 SEED = 0
