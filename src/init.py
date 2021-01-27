@@ -29,7 +29,7 @@ def init(config):
                                         vectors=torchtext.vocab.GloVe(name='6B'))
 
     # Acquire 'Spacy' tokenizer for the vocab words
-    tokenizer = get_tokenizer('spacy', language='en_core_web_sm')
+    tokenizer = get_tokenizer('spacy')
     # Acquire train and test IMDB sets with previously created
     # GloVe vocab and 'Spacy' tokenizer 
     train_set, test_set = IMDB(tokenizer=tokenizer, vocab=glove_vocab)

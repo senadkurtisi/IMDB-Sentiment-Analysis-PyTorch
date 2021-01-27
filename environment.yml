@@ -1,15 +1,28 @@
 name: sentiment-analysis
 channels:
   - pytorch
+  - conda-forge
   - defaults
 dependencies:
+  - attrs=20.3.0=pyhd3deb0d_0
   - blas=1.0=mkl
-  - ca-certificates=2020.7.22=0
-  - certifi=2020.6.20=py38_0
+  - brotlipy=0.7.0=py38h2bbff1b_1003
+  - ca-certificates=2020.12.5=h5b45459_0
+  - catalogue=1.0.0=py38haa244fe_3
+  - certifi=2020.12.5=py38haa244fe_1
+  - cffi=1.14.4=py38hcd4344a_0
+  - chardet=4.0.0=py38haa95532_1003
+  - cryptography=3.3.1=py38hcd4344a_0
   - cudatoolkit=10.2.89=h74a9793_1
+  - cymem=2.0.5=py38h885f38d_1
+  - cython-blis=0.7.4=py38h347fdf6_0
   - freetype=2.10.2=hd328e21_0
+  - idna=2.10=pyhd3eb1b0_0
+  - importlib-metadata=3.4.0=py38haa244fe_0
+  - importlib_metadata=3.4.0=hd8ed1ab_0
   - intel-openmp=2020.2=254
   - jpeg=9b=hb83a4c4_2
+  - jsonschema=3.2.0=py_2
   - libpng=1.6.37=h2a8f88b_0
   - libtiff=4.1.0=h56a325e_1
   - lz4-c=1.9.2=h62dcd97_1
@@ -17,24 +30,43 @@ dependencies:
   - mkl-service=2.3.0=py38hb782905_0
   - mkl_fft=1.2.0=py38h45dec08_0
   - mkl_random=1.1.1=py38h47e9c7a_0
+  - murmurhash=1.0.5=py38h885f38d_0
   - ninja=1.10.1=py38h7ef1ec2_0
   - numpy=1.19.1=py38h5510c5b_0
   - numpy-base=1.19.1=py38ha3acd2a_0
   - olefile=0.46=py_0
-  - openssl=1.1.1h=he774522_0
+  - openssl=1.1.1i=h8ffe710_0
   - pillow=7.2.0=py38hcc1f983_0
   - pip=20.2.2=py38_0
+  - plac=0.9.6=pyhd3eb1b0_1
+  - preshed=3.0.5=py38h885f38d_0
+  - pycparser=2.20=py_2
+  - pyopenssl=20.0.1=pyhd3eb1b0_1
+  - pyrsistent=0.17.3=py38h294d835_2
+  - pysocks=1.7.1=py38haa95532_0
   - python=3.8.5=h5fd99cc_1
+  - python_abi=3.8=1_cp38
   - pytorch=1.6.0=py3.8_cuda102_cudnn7_0
+  - requests=2.25.1=pyhd3eb1b0_0
   - setuptools=49.6.0=py38_0
   - six=1.15.0=py_0
+  - spacy=2.3.5=py38h1266d08_0
   - sqlite=3.33.0=h2a8f88b_0
+  - srsly=1.0.5=py38h885f38d_0
+  - thinc=7.4.5=py38h1266d08_0
   - tk=8.6.10=he774522_0
+  - torchtext=0.7.0=py38
   - torchvision=0.7.0=py38_cu102
+  - tqdm=4.55.1=pyhd3eb1b0_0
+  - urllib3=1.26.3=pyhd3eb1b0_0
   - vc=14.1=h0510ff6_4
   - vs2015_runtime=14.16.27012=hf0eaf9b_3
+  - wasabi=0.8.1=pyh44b312d_0
   - wheel=0.35.1=py_0
+  - win_inet_pton=1.1.0=py38haa95532_0
   - wincertstore=0.2=py38_0
   - xz=5.2.5=h62dcd97_0
+  - zipp=3.4.0=py_0
   - zlib=1.2.11=h62dcd97_4
   - zstd=1.4.5=h04227a9_0
+prefix: C:\Users\Senad\anaconda3\envs\sentiment-analysis
