@@ -18,11 +18,11 @@ def get_dataloaders(train_set, valid_set, test_set):
         test_loader(DataLoader): test dataloader
     '''
     train_loader = DataLoader(train_set, batch_size=net_config.batch_size, 
-                                                        collate_fn=pad_trim)
+                              collate_fn=pad_trim)
     valid_loader = DataLoader(valid_set, batch_size=net_config.batch_size, 
-                                                        collate_fn=pad_trim)
+                              collate_fn=pad_trim)
     test_loader = DataLoader(test_set, batch_size=net_config.batch_size, 
-                                                        collate_fn=pad_trim)
+                             collate_fn=pad_trim)
 
     return train_loader, valid_loader, test_loader
 

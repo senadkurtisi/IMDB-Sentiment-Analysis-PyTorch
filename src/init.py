@@ -14,16 +14,10 @@ def init(config):
         and uses that vocab to create train, validation
         and test sets for the IMDB dataset. Extracts the
         pad_id token.
-    
-    Returns:
-        config_data (dict): contains train, val and test sets,
-                            train set vocab and <pad_id>
     '''
     import os
     if not os.path.isdir('.data'):
         os.mkdir('.data')
-
-    config_data = dict()
 
     # Extract the initial vocab from the IMDB dataset
     vocab = IMDB(data_select='train')[0].get_vocab()
