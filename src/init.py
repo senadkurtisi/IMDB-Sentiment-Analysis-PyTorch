@@ -27,9 +27,8 @@ def init(config):
                                         max_size=MAX_VOCAB_SIZE, 
                                         min_freq=MIN_FREQ,
                                         vectors=torchtext.vocab.GloVe(name='6B'))
-
     # Acquire 'Spacy' tokenizer for the vocab words
-    tokenizer = get_tokenizer('spacy')
+    tokenizer = get_tokenizer('spacy', 'en_core_web_sm')
     # Acquire train and test IMDB sets with previously created
     # GloVe vocab and 'Spacy' tokenizer 
     train_set, test_set = IMDB(tokenizer=tokenizer, vocab=glove_vocab)

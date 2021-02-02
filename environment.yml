@@ -69,4 +69,5 @@ dependencies:
   - zipp=3.4.0=py_0
   - zlib=1.2.11=h62dcd97_4
   - zstd=1.4.5=h04227a9_0
-prefix: C:\Users\Senad\anaconda3\envs\sentiment-analysis
+  - pip:
+    - en-core-web-sm==2.3.1

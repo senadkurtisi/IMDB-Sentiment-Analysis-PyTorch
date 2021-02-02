@@ -10,16 +10,15 @@ from utils import get_dataloaders
 if __name__ == "__main__":
     # Load the datasets and used vocabulary
     init(config)
-
+    # Get dataloaders for train/validation/test sets
+    train_loader, valid_loader, test_loader = get_dataloaders(config['train'], 
+                                                            config['val'], 
+                                                            config['test'])
     if net_config.mode == "train":
         # Create fresh new instance of the RNN
         net = SentimentAnalyzer(config['vocab'], net_config.hidden_dim,
                                 net_config.layers, net_config.dropout, 
                                 net_config.bidirectional).to(device)
-        # Get dataloaders for train/validation/test sets
-        train_loader, valid_loader, test_loader = get_dataloaders(config['train'], 
-                                                                  config['val'], 
-                                                                  config['test'])
         # Train the network
         train_loop(net, train_loader, valid_loader, test_loader)
     else:
